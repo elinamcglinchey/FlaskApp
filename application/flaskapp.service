@@ -5,6 +5,7 @@ Description=Flask App
 User=jenkins
 WorkingDirectory=/home/jenkins/workspace/todo
 Environment=DATABASE_URI=sqlite:///data.db
+Environment=SECRET_KEY=shhhhh
 ExecStart=/bin/sh \
     -c 'python3 -m venv venv &&\
     . ./venv/bin/activate &&\
